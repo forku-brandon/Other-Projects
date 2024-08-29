@@ -1,0 +1,26 @@
+<MyGridLayout>
+    name:name
+    clas:clas
+    
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+        GridLayout:
+            cols:2
+            Label:
+                text:"name"
+            TextInput:
+                id:name
+                multiline:False
+            Label:
+                text:"class"
+            TextInput:
+                multiline:False
+                id:clas
+        Button:
+            text:"SUBMIT"
+            on_press:root.press()
+            font_size: 45
+            background_normal: ''
+            background_color: utils.get_color_from_hex('#eefa00')
+
